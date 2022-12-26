@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Algoritmo di Cesare</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            padding-left: 30px;
+        }
+
+        h5 {
+            font-size: 1.6rem;
+            line-height: 110%;
+            margin: 1.68rem 0 1.68rem 0;
+        }
+
+        .box {
+            padding-top: 0px;
+            padding-bottom: 0px;
+            margin-left: 3%;
+            box-shadow: 2px 2px 3px 3px var(--box-shadow-color);
+            --box-shadow-color: #2596be;
+        }
+
+        .box-shadow:hover {
+            --box-shadow-color: #2596be;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="">
+        <h5 class="title">ALGORITMO DI CESARE</h5>
+    </div>
+    <div>
+        <form method="post" action="main.php" style="display: flex">
+            <div>
+                <label class="label">Chiave/Offset</label>
+                <input type="number" name="chiave" min="1" max="26" class="input" style="width:250px"
+                    placeholder="Inserisci un numero..."><br><br>
+                <label class="label">Testo Originale</label>
+                <input type="text" name="testo-originale" class="input" style="width:250px"
+                    placeholder="Inserisci un messaggio..."><br><br>
+                <input type="submit" class="button is-info" value="Cifra" name="action" style="width:123px">
+                <input type="submit" class="button is-info" value="Decifra" name="action" style="width:123px">
+            </div>
+            <div class="box"><br>
+                <label class="label">Opzioni</label>
+                <label>
+                    <input type="checkbox" name="rdb-lettere-maiuscole">
+                    <span>Lettere Maiuscole</span>
+                </label><br>
+                <label>
+                    <input type="checkbox" name="rdb-lettere-minuscole">
+                    <span>Lettere Minuscole</span>
+                </label><br>
+                <label>
+                    <input type="checkbox" name="rdb-caratteri-speciali">
+                    <span>Caratteri Speciali</span>
+                </label><br>
+                <label>
+                    <input type="checkbox" name="rdb-punteggiatura">
+                    <span>Punteggiatura</span>
+                </label><br>
+                <label>
+                    <input type="checkbox" name="rdb-numeri">
+                    <span>Cifre (Da 0 a 9)</span>
+                </label><br>
+                <label>
+                    <input type="checkbox" name="rdb-spazi-vuoti">
+                    <span>Rimuovi spazi vuoti</span>
+                </label><br>
+                <label>
+                    <input type="checkbox" name="rdb-elimina-non-cifrati">
+                    <span>Elimina caratteri non cifrati</span>
+                </label><br><br>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
